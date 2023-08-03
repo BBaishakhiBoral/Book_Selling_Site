@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+:root{
+    --green:#27ae60;
+    --dark-color:#219150;
+    --black:#444;
+    --light-color:#666;
+    --border:.1rem solid rgba(0,0,0,.1);
+    --border-hover:.1rem solid var(--black);
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition:all .2s linear;
+    transition:width none;
+}
+
+html{
+    /* font-size: %; */
+    overflow-x: hidden;
+    scroll-padding-top: 5rem;
+    scroll-behavior: smooth;
+}
+
+#cart-container table{
+    border-collapse: collapse;
+    width: 70%;
+    float:left;
+    align-items: center;
+    table-layout: fixed;
+    margin: 10px 10px 0 5px;
+}
+
+#cart-container table thead{
+    font-weight: 1000%;
+    font-size: large;
+}
+
+#cart-container table thead td{
+    background:#27ae60 ;
+    color: white;
+    border: none;
+    padding: 6px 0 ;
+}
+
+#cart-container table td{
+    border: 2px solid #080d08;
+    text-align: center;
+}
+
+
+
+#cart-container table tbody img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+#cart-bottom .payment>div,
+#cart-bottom .total>div{
+	float:left;
+	width:20%;
+    border: 2px solid rgb(10, 10, 10);
+    margin: 5px 1000px 10px 5px;
+    
+}
+
+#cart-bottom .payment h3,
+#cart-bottom .total h3{
+    background:#27ae60 ;
+    color: white;
+    border: none;
+    padding: 6px 12px ;
+    font-weight: 700 ;
+    align-items: center;
+}
+
+#cart-bottom .payment p,
+#cart-bottom .payment label,
+#cart-bottom .payment img{
+    padding: 0px 12px;
+}
+
+#cart-bottom .total div>div{
+    padding: 0 12px;
+}
+
+#cart-bottom .total h5{
+    color: black;
+}
+
+.second-hr{
+    background: white;
+    width: 100%;
+    height: 1px;
+}
+
+#cart-bottom .total div>button{
+    margin: 0 12px 20px 0;
+    display: flex;
+    justify-content: flex-end;
+}
+#cart-bottom .total div>button{
+  background-color: #27ae60; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  /* float: left; */
+}
+
+#cart-bottom .total div>button:hover{
+    background-color: #3e8e41;
+    color: black
+}
+
+/* Delete button */
+
+#cart-container table tbody .btn{
+    display: flex;
+    align-items: center;
+    background: none;
+    padding: 0 24px 0 120px;
+    cursor: pointer; 
+    
+  }
+  
+  #cart-container .btn-delete {
+    font-size: 16px;
+    color: red;
+  }
+    
+    
+
+
